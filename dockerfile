@@ -5,7 +5,7 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy the shop-website folder into the container
-COPY /var/lib/jenkins/workspace/MyProject /usr/share/nginx/html
+COPY shop-website /usr/share/nginx/html
 
 # Expose the default HTTP port
 EXPOSE 80
